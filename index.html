@@ -4,15 +4,47 @@
     <meta charset="utf-8">
     <title>Weather AJAX</title>
     <link rel="stylesheet" type="text/css" href="theme.css">
-    <script src="app.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
+    <h1 id="thish1">Ara's Weather App</h1>
     <header>
-      this is the header
+      <p>Is it hot?  Is it raining?  Let's find out!!</p>
     </header>
-    <article class="art">
-      article
-    </article>
+
+    <button onclick="getLocation()">Get latitude and longitude</button>
+
+    <h6 id="hello" style="font-size: 16px;">location will show here</h6>
+    <hr>
+
+    <!-- <button id="weatherbutton" type="button" name="button">unused button for now</button> -->
+
+      City:
+      <div id="divcity" class="divcity">
+      </div><br>
+
+      What's the prediction in <span class="divcity"></span>?
+      <div id="divdesc">
+      </div><br>
+
+      Pic:
+      <div id="divicon">
+
+      </div><br>
+
+      Temp in Celcius:
+      <div id="divc">
+      </div><br>
+
+      Temp in Fahrenheit:
+      <div id="divf">
+      </div>
+
+
+
+
+
     <footer>this is the footer</footer>
+    <script src="app.js" charset="utf-8"></script>
   </body>
 </html>

@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+
+header, footer{
+  color: #fff;
+  background-color: #000;
+}
+
+#divf, #divc, #divcity, #divdesc, #divicon{
+  margin: 0 auto;
+  background-color: lightblue;
+  height: 50px;
+  width: 200px;
+  font-size: 24px;
+  border: solid 1px black;
+}
