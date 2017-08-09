@@ -1,11 +1,15 @@
 var x = document.getElementsByTagName("h6")[0];
 // document.getElementById("thish1").innerHTML = "changed22222!!!";
 
+// only shows Celsius at first
 $("#divc").hide();
+
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
     console.log("Note - this is position: ")
     console.log(position);
+
+    // fetching info from fcc-weather-api
     $.ajax({
             url: "https://fcc-weather-api.glitch.me/api/current?lat=" + position.coords.latitude +
             "&lon=" + position.coords.longitude,
@@ -17,6 +21,7 @@ function showPosition(position) {
               $("#divdesc").html(result.weather[0].description);
               $(".divcity").html(result.name);
 
+              // weather[0].icon is not always truthy
               if(result.weather[0].icon){$("#divicon").html('<img style="height: 95px;" src="' + result.weather[0].icon + '">');}
               else{$("#divicon").html('<img src="http://openweathermap.org/img/w/' + result.weather[1].icon + '.png">');}
 
