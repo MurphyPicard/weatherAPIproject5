@@ -1,17 +1,46 @@
-body {
+body{
   text-align: center;
+  background-color: #a3a6a9;
+  color: #5D4157;
+  font: Arial;
 }
 
 header, footer{
-  color: #fff;
-  background-color: #000;
+  color: #5D4157;
+  background-color: #EBE3AA;
+  height: 35px;
+  font-size: 20px;
+  font: Arial;
+}
+
+#getButton{
+  margin: 10px auto;
+  width: 200px;
+  height: 100px;
+  background-color: #A8CABA;
+  font-size: 25px;
+  color: white;
+  border-radius: 50%;
 }
 
 #divf, #divc, #divcity, #divdesc, #divicon{
-  margin: 0 auto;
-  background-color: lightblue;
+  margin: 10px auto;
+  background-color: #a3a6a9;
   height: 50px;
   width: 200px;
   font-size: 24px;
-  border: solid 1px black;
+}
+
+#switchButton{
+  margin: 10px auto;
+  width: 200px;
+  height: 100px;
+  background-color: #CAD7B2;
+  font-size: 25px;
+  color: white;
+  border-radius: 50%;
+}
+
+#arrows{
+  height: 35px;
 }

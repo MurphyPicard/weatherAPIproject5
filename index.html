@@ -12,39 +12,47 @@
       <p>Is it hot?  Is it raining?  Let's find out!!</p>
     </header>
 
-    <button onclick="getLocation()">Get latitude and longitude</button>
+    <button id="getButton" onclick="getLocation()">Get the Weather</button>
 
-    <h6 id="hello" style="font-size: 16px;">location will show here</h6>
+
     <hr>
 
     <!-- <button id="weatherbutton" type="button" name="button">unused button for now</button> -->
 
-      City:
-      <div id="divcity" class="divcity">
-      </div><br>
+    Where are we?
+    <div id="divcity" class="divcity">
+    </div>
+    <h6 id="hello" style="font-size: 16px;"></h6>
+    <br>
 
-      What's the prediction in <span class="divcity"></span>?
-      <div id="divdesc">
-      </div><br>
+    What's the prediction in <span class="divcity"></span>?
+    <div id="divdesc">
+    </div><br>
 
-      Pic:
-      <div id="divicon">
+    <div id="divicon">
+    </div><br>
 
-      </div><br>
+    <div id="divc">
+    </div><br>
 
-      Temp in Celcius:
-      <div id="divc">
-      </div><br>
+    <div id="divf">
+    </div>
 
-      Temp in Fahrenheit:
-      <div id="divf">
-      </div>
-
-
-
+    <button id="switchButton" onclick="FtoCtoF()">
+      Switch?
+      <img id="arrows" src="http://www.charbase.com/images/glyph/8646" alt="to?">
+    </button>
 
 
-    <footer>this is the footer</footer>
+
+
+
+
+
+
+
+
+    <footer>Thanks for Clicking!</footer>
     <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
