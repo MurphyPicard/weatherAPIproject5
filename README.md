@@ -1,6 +1,6 @@
 # Ara's Weather App
 
-![Alt text](C:\Users\ADMIN\Pictures\weatherAppThumb)
+![Alt text](C:\Users\ADMIN\Pictures\weatherAppThumb.PNG)
 
 ## This is Project 6 for CareerDevs
 
