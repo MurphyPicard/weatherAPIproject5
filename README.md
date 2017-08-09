@@ -2,6 +2,10 @@
 
 ## This is Project 6 for CareerDevs
 
+```javascript
+console.log("Hello Providence Library");
+```
+
 #### Requirements:
 
 1. Website should have a minimalistic yet professional feel:
@@ -17,8 +21,6 @@
 
 
 
-```javascript
-console.log("Hello Providence Library");
-```
+
 
 ## Link to the site: https://murphypicard.github.io/weatherAPIproject6/
