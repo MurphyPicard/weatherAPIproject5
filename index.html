@@ -7,25 +7,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
+
     <h1 id="thish1">Ara's Weather App</h1>
+
     <header>
       <p>Is it hot?  Is it raining?  Let's find out!!</p>
     </header>
 
     <button id="getButton" onclick="getLocation()">Get the Weather</button>
 
-
     <hr>
 
-    <!-- <button id="weatherbutton" type="button" name="button">unused button for now</button> -->
-
-    Where are we?
+    <p>Where are we?</p>
     <div id="divcity" class="divcity">
     </div>
-    <h6 id="hello" style="font-size: 16px;"></h6>
+    <h6 id="hello" style="font-size: 16px;">
+    </h6>
     <br>
 
-    What's the prediction in <span class="divcity"></span>?
+    <p>What's the prediction in <span class="divcity"></span>?</p>
     <div id="divdesc">
     </div><br>
 
@@ -40,17 +40,8 @@
 
     <button id="switchButton" onclick="FtoCtoF()">
       Switch?
-      <img id="arrows" src="http://www.charbase.com/images/glyph/8646" alt="to?">
+      <img id="arrows" src="http://www.charbase.com/images/glyph/8646" alt="<=>">
     </button>
-
-
-
-
-
-
-
-
-
 
     <footer>Thanks for Clicking!</footer>
     <script src="app.js" charset="utf-8"></script>

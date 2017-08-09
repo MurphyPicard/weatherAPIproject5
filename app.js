@@ -1,5 +1,6 @@
 var x = document.getElementsByTagName("h6")[0];
 // document.getElementById("thish1").innerHTML = "changed22222!!!";
+
 $("#divc").hide();
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
@@ -14,7 +15,6 @@ function showPosition(position) {
               console.log(result.weather[0]);
               console.log(result.weather[1]);
               $("#divdesc").html(result.weather[0].description);
-              $("#divcity").html(result.name);
               $(".divcity").html(result.name);
 
               if(result.weather[0].icon){$("#divicon").html('<img style="height: 95px;" src="' + result.weather[0].icon + '">');}
@@ -25,15 +25,30 @@ function showPosition(position) {
         }});
 }//showPosition
 
+//
 function getLocation(){
     if (navigator.geolocation) {
-      console.log("Note: in IF");
+      // console.log("Note: in IF");
         navigator.geolocation.getCurrentPosition(showPosition);
     } else {
-      console.log("Note: in ELSE");
+      // console.log("Note: in ELSE");
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }//getLocation
+
+// to show either Celcius or Fahrenheit but not both
+var showCelcius = false;
+function FtoCtoF(){
+  if (showCelcius == false){
+    $("#divf").hide();
+    $("#divc").show();
+    showCelcius = true;
+  }else{
+    $("#divc").hide();
+    $("#divf").show();
+    showCelcius = false;
+  }
+}
 
 //for openweathermap.org
 var weatherKey = "b2e58b52829ad3eed30844f56780b2f2";
@@ -52,15 +67,3 @@ var weatherKey = "b2e58b52829ad3eed30844f56780b2f2";
 // api.openweathermap.org/data/2.5/forecast?id=524901&APPID=1111111111
 
 // fcc version https://fcc-weather-api.glitch.me/api/current?
-var showCelcius = false;
-function FtoCtoF(){
-  if (showCelcius == false){
-    $("#divf").hide();
-    $("#divc").show();
-    showCelcius = true;
-  }else{
-    $("#divc").hide();
-    $("#divf").show();
-    showCelcius = false;
-  }
-}

@@ -21,8 +21,24 @@ console.log("Hello Providence Library");
   * Current weather section should allow a click to change from Fahrenheit to Celsius. This could be a button or some other method.
 4. Weather must be pulled from an API. Recommended API is the open Weather API however you are free to use any weather API you wish.
 
+#### What I Learned:
 
+1. How easy is it to find the user's location?
+  * I was aware of this but had rarely used it.  
 
-
+```javascript
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+```
 
 ## Link to the site: https://murphypicard.github.io/weatherAPIproject6/
