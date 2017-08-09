@@ -1,5 +1,7 @@
 # Ara's Weather App
 
+![Alt text](C:\Users\ADMIN\Pictures\weatherAppThumb)
+
 ## This is Project 6 for CareerDevs
 
 ```javascript
